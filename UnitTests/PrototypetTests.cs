@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Prototype;
+using PrototypePattern;
 using UnitTests.Util;
 
 namespace UnitTests
@@ -11,13 +11,13 @@ namespace UnitTests
         [TestMethod]
         public void Prototype()
         {
-            var prototype = null as IPrototype;
-            var clone1 = prototype.Clone();
+            IPrototype prototype = new Prototype();
+            IPrototype clone1 = prototype.Clone();
 
             Assert.AreEqual(prototype.Identifier, clone1.Identifier);
 
             prototype.Identifier = Rand.NewIdentifier();
-            var clone2 = prototype.Clone();
+            IPrototype clone2 = prototype.Clone();
 
             Assert.AreNotEqual(prototype.Identifier, clone1.Identifier);
             Assert.AreEqual(prototype.Identifier, clone2.Identifier);
