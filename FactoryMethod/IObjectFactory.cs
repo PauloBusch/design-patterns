@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace FactoryMethodPattern
 {
-    public class FactoryMethod : IFactoryMethod
+    public interface IObjectFactory
     {
+        IObject MakeObject<T>();
+        IObject MakeInt();
+        IObject MakeString();
     }
 }

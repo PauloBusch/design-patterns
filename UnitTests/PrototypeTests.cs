@@ -6,7 +6,7 @@ using UnitTests.Util;
 namespace UnitTests
 {
     [TestClass]
-    public class PrototypetTests
+    public class PrototypeTests
     {
         [TestMethod]
         public void Prototype()
