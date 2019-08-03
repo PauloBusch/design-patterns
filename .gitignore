@@ -1,2 +1,7 @@
 .vs/
 *.log
+
+packages/
+
+UnitTests/obj/
+UnitTests/bin/
