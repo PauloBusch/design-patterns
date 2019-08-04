@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Sing
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{F44A8612-DDEB-4BDD-A1C5-16F15DE32C34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observable", "Observable\Observable.csproj", "{7DB97C84-289F-4DC0-AC89-BA752B9BAE66}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F44A8612-DDEB-4BDD-A1C5-16F15DE32C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F44A8612-DDEB-4BDD-A1C5-16F15DE32C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F44A8612-DDEB-4BDD-A1C5-16F15DE32C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DB97C84-289F-4DC0-AC89-BA752B9BAE66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DB97C84-289F-4DC0-AC89-BA752B9BAE66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DB97C84-289F-4DC0-AC89-BA752B9BAE66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DB97C84-289F-4DC0-AC89-BA752B9BAE66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
