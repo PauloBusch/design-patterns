@@ -14,7 +14,7 @@ namespace UnitTests
         [TestMethod]
         public void Adapter()
         {
-            IUSBAdapter adapter = null;
+            IUSBAdapter adapter = new MicroUSBAdapter();
             byte[] data = new byte[]{ };
             Assert.AreEqual(EUSBState.DISCONNECTED,adapter.UsbState);
             Assert.IsFalse(adapter.SendData(data));
