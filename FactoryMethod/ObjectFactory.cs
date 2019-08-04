@@ -8,13 +8,13 @@ namespace FactoryMethodPattern
 {
     public class ObjectFactory : IObjectFactory
     {
-        public IObject MakeInt()
+        private IObject MakeInt()
         {
             var objInt = new ObjectInt();
             objInt.InitializeObject();
             return objInt;
         }
-        public IObject MakeString()
+        private IObject MakeString()
         {
             var objInt = new ObjectString();
             objInt.InitializeObject();

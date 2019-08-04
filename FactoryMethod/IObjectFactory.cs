@@ -9,7 +9,5 @@ namespace FactoryMethodPattern
     public interface IObjectFactory
     {
         IObject MakeObject<T>();
-        IObject MakeInt();
-        IObject MakeString();
     }
 }
