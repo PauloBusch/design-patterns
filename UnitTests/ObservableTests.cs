@@ -9,7 +9,7 @@ namespace UnitTests
     {
         [TestMethod]
         public void Observable() { 
-            IObserver<string> observer = null;
+            IObserver<string> observer = new Observer();
             var observable1 = new MockObservable();
             var observable2 = new MockObservable();
 
