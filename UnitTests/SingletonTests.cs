@@ -10,7 +10,7 @@ namespace UnitTests
         private int SINGLETON_INSTANCES = 1;
         [TestMethod]
         public void Singleton() {
-            ISingleton<Mock> singleton = null;
+            ISingleton<Mock> singleton = new Singleton<Mock>(() => new Mock());
 
             Assert.AreEqual(SINGLETON_INSTANCES, singleton.Instance.Instances);
             Assert.AreEqual(SINGLETON_INSTANCES, singleton.Instance.Instances);
