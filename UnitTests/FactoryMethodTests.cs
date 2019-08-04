@@ -9,7 +9,7 @@ namespace UnitTests
         [TestMethod]
         public void FactoryMethod()
         {
-            IObjectFactory factory = null;
+            IObjectFactory factory = new ObjectFactory();
             var intObj = factory.MakeInt();
             var strObj = factory.MakeString();
 

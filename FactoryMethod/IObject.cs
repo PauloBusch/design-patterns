@@ -8,7 +8,7 @@ namespace FactoryMethodPattern
 {
     public interface IObject
     {
-        string Identifier { get; set; }
+        string Identifier { get; }
         object Value { get; }
         void InitializeObject();
     }
