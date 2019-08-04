@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdapterTests.cs" />
     <Compile Include="FactoryMethodTests.cs" />
     <Compile Include="PrototypeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +60,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Adapter\Adapter.csproj">
+      <Project>{f44a8612-ddeb-4bdd-a1c5-16f15de32c34}</Project>
+      <Name>Adapter</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj">
       <Project>{fa9702cb-c614-427f-a111-a1453b66711f}</Project>
       <Name>FactoryMethod</Name>

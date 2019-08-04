@@ -9,6 +9,7 @@ namespace AdapterPattern
     public interface IUSBAdapter
     {
         EUSBState UsbState { get; }
+        bool SendData(byte[] bytes);
         void Connect();
         void Disconnect();
     }
