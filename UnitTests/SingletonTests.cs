@@ -10,7 +10,7 @@ namespace UnitTests
         private int SINGLETON_INSTANCES = 1;
         [TestMethod]
         public void Singleton() {
-            ISingleton<Mock> singleton = new Singleton<Mock>(() => new Mock());
+            ISingleton<MockSingleton> singleton = new Singleton<MockSingleton>(() => new MockSingleton());
 
             Assert.AreEqual(SINGLETON_INSTANCES, singleton.Instance.Instances);
             Assert.AreEqual(SINGLETON_INSTANCES, singleton.Instance.Instances);
@@ -22,12 +22,12 @@ namespace UnitTests
         }
     }
 
-    public class Mock { 
+    public class MockSingleton { 
         public int Instances { get => _instances; }
         public string Identifier { get; }
 
         private static int _instances;
-        public Mock() { 
+        public MockSingleton() { 
             _instances++;
             Identifier = Rand.NewIdentifier();
         }
