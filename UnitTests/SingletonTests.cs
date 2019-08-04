@@ -22,7 +22,7 @@ namespace UnitTests
         }
     }
 
-    public class MockSingleton { 
+    internal class MockSingleton { 
         public int Instances { get => _instances; }
         public string Identifier { get; }
 

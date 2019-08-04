@@ -1,6 +1,6 @@
 ﻿namespace ObservablePattern
 {
-    public interface IObserved<TypeValue>
+    public interface IObserver<TypeValue>
     {
         void Subscribe(IObservable<TypeValue> observable);
         void Unsubscribe(IObservable<TypeValue> observable);
