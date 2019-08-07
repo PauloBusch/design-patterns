@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdapterTests.cs" />
+    <Compile Include="CommandTests.cs" />
     <Compile Include="FactoryMethodTests.cs" />
     <Compile Include="ObservableTests.cs" />
     <Compile Include="PrototypeTests.cs" />
@@ -64,6 +65,10 @@
     <ProjectReference Include="..\Adapter\Adapter.csproj">
       <Project>{f44a8612-ddeb-4bdd-a1c5-16f15de32c34}</Project>
       <Name>Adapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Command\Command.csproj">
+      <Project>{573b34e6-dc2a-4224-b9f2-a8c00e77062b}</Project>
+      <Name>Command</Name>
     </ProjectReference>
     <ProjectReference Include="..\FactoryMethod\FactoryMethod.csproj">
       <Project>{fa9702cb-c614-427f-a111-a1453b66711f}</Project>
