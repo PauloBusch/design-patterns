@@ -17,8 +17,8 @@ namespace UnitTests
             var mockFileByOpen = new MockCommand();
             var mockFileByClose = new MockCommand();
 
-            ICommand commadOpen = null;
-            ICommand commadClose = null;
+            ICommand commadOpen = new OpenFileCommand(mockFileByOpen);
+            ICommand commadClose = new CloseFileCommand(mockFileByClose);
 
             commadOpen.Execute();
             commadClose.Execute();
