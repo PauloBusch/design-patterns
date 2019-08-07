@@ -14,8 +14,8 @@ namespace UnitTests
         [TestMethod]
         public void Command()
         {
-            MockCommand mockFileByOpen = null;
-            MockCommand mockFileByClose = null;
+            var mockFileByOpen = new MockCommand();
+            var mockFileByClose = new MockCommand();
 
             ICommand commadOpen = null;
             ICommand commadClose = null;
